@@ -1,0 +1,39 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/public/css/style.css">
+<link rel="stylesheet" href="/public/css/main.css">
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<div id="login_page">
+    <div class="tit">注册</div>
+    <form id="login_form" action="#" class="login_form" method="post">
+        <div><span>用户名:</span><input type="text" name="username"></div>
+        <div><span>密码:</span><input type="password" name="password"></div>
+        <div><span>确认密码:</span><input type="password" name="repass"></div>
+        <div>已有账号,<a href="/Login/index">去登录</a></div>
+        <div><input type="submit" class="btn" value="提交" id="submit_btn"></div>
+    </form>
+</div>
+<script>
+    var form = $("#login_form");
+    $("#submit_btn").click(function(){
+        $.post("/Login/register",form.serialize(),function (r) {
+            var r = $.parseJSON(r);
+            if(!r.flag){
+                Mask.alert(r.mess);
+            }else {
+                Mask.alert(r.mess,function () {
+                    location.href="/Login/index";
+                });
+            }
+        });
+        return false;
+    });
+</script>
+</body>
+</html>

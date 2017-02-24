@@ -1,0 +1,47 @@
+html,body,iframe,div,span,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,a,strong,img,form,fieldset,legend,label{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
+body{line-height:1;font-family: "Microsoft YaHei","微软雅黑", Arial;}
+html,body{height: 100%;}
+ul,ol{list-style:none;}
+label,input[type='radio'],input[type='checkbox']{cursor:pointer;}
+a{text-decoration:none;cursor: pointer;color: #272636;}
+a:hover{text-decoration:underline;}
+select,input,button{vertical-align:middle;}
+select,input{border: 1px solid #999;height: 21px;line-height: 21px;padding: 1px;font-size: 13px;box-sizing: content-box;}
+input.error_{border: 1px solid #d74242;}
+table{border-collapse:collapse;border-spacing:0;color: #272636;}
+table td{color: #272636;}
+html{zoom:expression(function(ele){ele.style.zoom="1";document.execCommand("BackgroundImageCache",false,true);}(this));}
+*html,*html body{background-image:url(about:blank);background-attachment:fixed;}
+
+/* Blank */
+.bk1,.bk2,.bk3,.bk4,.bk5,.bk6,.bk7,.bk8,.bk9,.bk10,.bk11,.bk12,.bk13,.bk14,.bk15,.bk16,.bk17,.bk18,.bk19,.bk20{clear:both;font:1px/1px Arial;overflow:hidden;}
+.bk1{height:1px;}.bk2{height:2px;}.bk3{height:3px;}.bk4{height:4px;}.bk5{height:5px;}.bk6{height:6px;}.bk7{height:7px;}.bk8{height:8px;}.bk9{height:9px;}.bk10{height:10px;}.bk11{height:11px;}.bk12{height:12px;}.bk13{height:13px;}.bk14{height:14px;}.bk15{height:15px;}.bk16{height:16px;}.bk17{height:17px;}.bk18{height:18px;}.bk19{height:19px;}.bk20{height:20px;}
+
+/*common*/
+.cur_p{cursor:pointer;}
+.dn{display:none;}
+.db{display:block;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{content: ".";visibility: hidden;display: block;height: 0;clear: both;overflow: hidden;}
+.clearfix{zoom: 1;}
+
+.pos_a{position:absolute;}
+.pos_r{position:relative;}
+.txt_l{text-align:left;}
+.txt_c{text-align:center;}
+.txt_r{text-align:right;}
+.cb{clear:both;}
+.ver_a{vertical-align: middle !important;}
+.ver_t{vertical-align: top !important;}
+
+
+
+
+textarea{resize: none;}
+
+.w1200{position:relative;width: 1200px;margin:0 auto;}
+.font-red{color: #db2929;}
+.font-blue{color: #007fff;}
+
+
